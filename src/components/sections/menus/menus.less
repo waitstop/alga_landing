@@ -1,0 +1,51 @@
+.menus{
+  text-align: center;
+  padding: 2.5rem 0;
+  h1{
+    font-size: 3rem;
+    margin-bottom: 1rem;
+  }
+  h3{
+    font-size: 1.5rem;
+    font-weight: lighter;
+    color: var(--text-secondary);
+  }
+  & .cats {
+    margin-top: 3rem;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    gap: 32px;
+
+    &-item{
+      flex-basis: calc(100% / 3 - 22px);
+      h4{
+        color: black;
+        font-size: 1.25rem;
+        margin: 1rem 0;
+        transition: 0.1s all linear;
+      }
+      &:hover{
+        .cats-img{
+          color: black;
+          transform: scale(1.025);
+          box-shadow: 0 0 10px 2px;
+        }
+        & h4{
+          color: var(--primary)
+        }
+      }
+    }
+
+    &-img{
+      width: 100%;
+      aspect-ratio: 1/1;
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+      transition: 0.1s all linear;
+
+    }
+  }
+}

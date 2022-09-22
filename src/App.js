@@ -1,25 +1,30 @@
-import logo from './logo.svg';
-import './App.css';
+import Banner from "./components/sections/banner/Banner";
+import './fonts/comfortaa/comfortaa.css'
+import Header from "./components/sections/header/Header";
+import {useState} from "react";
+import Gallery from "./components/sections/gallery/Gallery";
+import Location from "./components/sections/location/Location";
+import Menus from "./components/sections/menus/Menus";
+import Footer from "./components/sections/footer/Footer";
+
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    const [bannerHeight, setBannerHeight] = useState(0)
+
+    const passData = (data) => {
+        setBannerHeight(data)
+    }
+
+    return (
+        <div className="App">
+            <Banner passData={passData}/>
+            <Header bannerHeight={bannerHeight}/>
+            <Gallery/>
+            <Location/>
+            <Menus/>
+            <Footer/>
+        </div>
+    )
 }
 
-export default App;
+export default App

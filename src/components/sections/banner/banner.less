@@ -1,0 +1,39 @@
+.banner{
+  background-color: var(--dark-bg);
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  padding: 12px 2rem;
+
+  &__left{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 50px;
+    > a {
+      font-size: 16px;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      img{
+        height: 32px;
+        width: auto;
+        margin-right: 10px;
+      }
+    }
+  }
+
+  &__right{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+    > a{
+      img{
+        height: 32px;
+        width: auto;
+      }
+    }
+  }
+}

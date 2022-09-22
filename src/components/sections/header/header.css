@@ -1,0 +1,49 @@
+header {
+  position: relative;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url("../../../images/header/bg.jpg");
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+header nav {
+  padding: 32px 0;
+  display: flex;
+  justify-content: space-between;
+}
+header nav > a > img {
+  width: 220px;
+}
+header nav ul {
+  display: flex;
+  flex-direction: row;
+  gap: 32px;
+}
+header > .arrow-down {
+  bottom: 32px;
+  left: 50%;
+  transform: translateX(-50%);
+  position: absolute;
+}
+header > .arrow-down > svg {
+  transition: 0.1s fill linear;
+  fill: white;
+  animation-name: arrow-animation;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+}
+header > .arrow-down:hover svg {
+  fill: var(--primary);
+}
+@keyframes arrow-animation {
+  from {
+    transform: translateY(5px);
+  }
+  50% {
+    transform: translateY(-5px);
+  }
+  to {
+    transform: translateY(5px);
+  }
+}
+/*# sourceMappingURL=header.css.map */

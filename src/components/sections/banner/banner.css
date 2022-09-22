@@ -1,0 +1,36 @@
+.banner {
+  background-color: var(--dark-bg);
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  padding: 12px 2rem;
+}
+.banner__left {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 50px;
+}
+.banner__left > a {
+  font-size: 16px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.banner__left > a img {
+  height: 32px;
+  width: auto;
+  margin-right: 10px;
+}
+.banner__right {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
+}
+.banner__right > a img {
+  height: 32px;
+  width: auto;
+}
+/*# sourceMappingURL=banner.css.map */

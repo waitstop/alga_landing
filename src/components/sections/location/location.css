@@ -1,0 +1,31 @@
+.about {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  background: var(--gray-bg);
+}
+.about__map {
+  height: 700px;
+  width: 50%;
+}
+.about__right {
+  padding: 50px;
+}
+.about__right > div {
+  margin-bottom: 2rem;
+}
+.about h3 {
+  color: var(--primary);
+  margin: 0 0 1rem;
+}
+.about a,
+.about p {
+  transition: 0.1s all linear;
+  color: black;
+  margin: 0 0 0.5rem;
+}
+.about a:hover > *,
+.about a:hover {
+  color: var(--primary);
+}
+/*# sourceMappingURL=location.css.map */
