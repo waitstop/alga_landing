@@ -13,9 +13,12 @@ function importAll(r) {
 }
 
 const images = importAll(require.context('../../../images/gallery', false, /\.(png|jpe?g|svg)$/));
+const imagesF = importAll(require.context('../../../images/gallery/first_to_show', false, /\.(png|jpe?g|svg)$/));
 images.sort(() => Math.random() - 0.5);
+images.unshift([...imagesF])
 
 const Gallery = () => {
+    console.log(images)
     const { width } = useWindowDimensions()
 
     let initialToShow = 6

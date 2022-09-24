@@ -13,7 +13,7 @@ const Location = () => {
             />
             <div className="about__right">
                 <div>
-                    <h3>Телефон</h3>
+                    <h3>Телефон для заказа</h3>
                     <a href={'tel:89269663757'}>
                         <p>+7 (926) 966 37 57</p>
                     </a>
