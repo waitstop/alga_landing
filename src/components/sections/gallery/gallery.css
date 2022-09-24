@@ -18,6 +18,10 @@
   color: var(--text-secondary);
 }
 .gallery input {
+  color: black;
+  border-radius: 0;
+  outline: none;
+  background: transparent;
   margin-top: 2rem;
   cursor: pointer;
   font-family: 'Comfortaa', sans-serif;
@@ -28,6 +32,8 @@
   transition: 0.1s all linear;
 }
 .gallery input:hover {
+  border-radius: 0;
+  outline: none;
   color: white;
   background: var(--primary);
   border-color: var(--primary);
