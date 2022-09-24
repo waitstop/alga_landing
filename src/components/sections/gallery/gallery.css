@@ -38,6 +38,12 @@
   background: var(--primary);
   border-color: var(--primary);
 }
+.gallery input:focus-visible {
+  color: black;
+  border-radius: 0;
+  outline: none;
+  background: transparent;
+}
 .gallery .image-container {
   margin-top: 3rem;
   display: flex;
