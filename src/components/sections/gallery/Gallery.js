@@ -1,7 +1,9 @@
 import './gallery.css'
+import './gallery_responvise.css'
 import Container from "../../container/Container";
 import {useState} from "react";
 import {Button as ScrollButton} from 'react-scroll';
+import useWindowDimensions from "../../../hooks/useWindowDimensions";
 
 function importAll(r) {
     let images = [];
@@ -14,8 +16,11 @@ const images = importAll(require.context('../../../images/gallery', false, /\.(p
 images.sort(() => Math.random() - 0.5);
 
 const Gallery = () => {
+    const { width } = useWindowDimensions()
 
-    const initialToShow = 6
+    let initialToShow = 6
+    if(width <= 780) initialToShow = 4
+    if(width <= 450) initialToShow = 2
     const [imagesToShow, setImagesToShow] = useState(initialToShow)
 
     return(

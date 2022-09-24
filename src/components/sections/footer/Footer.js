@@ -1,4 +1,5 @@
 import './footer.css';
+import './footer_responsive.css'
 import logo from '../../../images/icons/logo_white.svg';
 import Container from "../../container/Container";
 import {animateScroll as scroll, Link} from "react-scroll";
@@ -7,7 +8,9 @@ const Footer = () => {
     return(
         <footer>
             <Container>
-                <img onClick={()=>scroll.scrollToTop()} src={logo} alt="logo"/>
+                <div>
+                    <img onClick={()=>scroll.scrollToTop()} src={logo} alt="logo"/>
+                </div>
                 <ul>
                     <li><span>Пн - Вс 09:00 – 00:00</span></li>
                     <li>

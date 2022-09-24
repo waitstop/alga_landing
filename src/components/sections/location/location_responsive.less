@@ -1,0 +1,21 @@
+@import "../../../index.less";
+
+@media screen and (max-width: @tablet-breakpoint) {
+  .about{
+    flex-direction: column-reverse;
+    &__map{
+      height: 500px;
+      width: 100%;
+    }
+  }
+}
+
+@media screen and (max-width: @mobile-breakpoint) {
+  .about{
+    flex-direction: column-reverse;
+    &__map{
+      height: 350px;
+      width: 100%;
+    }
+  }
+}

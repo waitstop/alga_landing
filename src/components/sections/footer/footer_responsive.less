@@ -1,0 +1,28 @@
+@import "../../../index.less";
+
+@media screen and (max-width: @tablet-breakpoint) {
+  footer{
+    > div {
+      flex-wrap: wrap;
+      > div {
+        order: 4;
+      }
+    }
+    ul{
+      font-size: 14px;
+      flex-basis: calc(100% / 3 - 10%);
+      padding: 0;
+      &:nth-child(2){
+        flex-basis: auto;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: @mobile-breakpoint) {
+  footer{
+    ul{
+      flex-basis: calc(100% / 2 - 10%);
+    }
+  }
+}

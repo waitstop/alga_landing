@@ -1,3 +1,22 @@
+@import "../../index.less";
+
+
 .container{
   padding-inline: 100px;
+}
+
+@media screen and (max-width: @laptop-breakpoint) {
+  .container{
+    padding-inline: 50px;
+  }
+}
+@media screen and (max-width: @tablet-breakpoint) {
+  .container{
+    padding-inline: 16px;
+  }
+}
+@media screen and (max-width: @mobile-breakpoint) {
+  .container{
+    padding-inline: 12px;
+  }
 }

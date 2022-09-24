@@ -36,4 +36,28 @@ ul {
   background-color: var(--primary);
   border-color: var(--primary);
 }
-/*# sourceMappingURL=index.css.map */
+@media screen and (max-width: 780px) {
+  .menus h1 {
+    margin-top: 0;
+    font-size: 2.5rem;
+  }
+  .menus h3 {
+    font-size: 1rem;
+  }
+  .menus .cats {
+    flex-wrap: wrap;
+    gap: 16px;
+  }
+  .menus .cats-item {
+    flex-basis: calc(100% / 2 - 20px);
+  }
+  .menus .cats-item h4 {
+    font-size: 1rem;
+  }
+}
+@media screen and (max-width: 780px) {
+  .menus .cats-item {
+    flex-basis: calc(100% / 1 - 20px);
+  }
+}
+/*# sourceMappingURL=menus_responsive.css.map */

@@ -1,4 +1,5 @@
 import './location.css'
+import './location_responsive.css'
 
 
 const Location = () => {

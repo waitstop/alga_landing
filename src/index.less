@@ -1,9 +1,13 @@
-:root {
+@laptop-breakpoint: 1024px;
+@tablet-breakpoint: 780px;
+@mobile-breakpoint: 450px;
+
+:root{
   --dark-bg: #221F1F;
-  --gray-bg: rgba(0, 0, 0, 0.1);
+  --gray-bg: rgba(0,0,0,0.1);
   --light-bg: #F4F1F0;
   --primary: #C92519;
-  --text-secondary: rgba(0, 0, 0, 0.5);
+  --text-secondary: rgba(0,0,0,0.5);
 }
 body {
   margin: 0;
@@ -11,29 +15,33 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
 }
+
 a {
   cursor: pointer;
   transition: 0.1s color linear;
   text-decoration: none;
   color: white;
 }
-a:hover {
-  color: var(--primary);
+a:hover{
+  color: var(--primary)
 }
-ul {
+
+ul{
   list-style: none;
 }
-.button-link {
+
+.button-link{
   transition: 0.1s all linear;
   border: 1px solid white;
   padding: 0.5rem;
 }
-.button-link:hover {
+.button-link:hover{
   color: white;
   background-color: var(--primary);
   border-color: var(--primary);
 }
-/*# sourceMappingURL=index.css.map */

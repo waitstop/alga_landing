@@ -1,0 +1,36 @@
+@import "../../../index.less";
+
+@media screen and (max-width: @tablet-breakpoint) {
+  .banner{
+    padding: 12px 1rem;
+    &__left{
+      gap: 25px;
+      > a {
+        font-size: 14px;
+        img {
+          height: 24px;
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 580px) {
+  .banner{
+    &__right{
+      display: none;
+    }
+  }
+}
+
+@media screen and (max-width: @mobile-breakpoint) {
+  .banner{
+    &__left{
+      > a {
+        font-size: 12px;
+        img {
+          height: 20px;
+        }
+      }
+    }
+  }
+}

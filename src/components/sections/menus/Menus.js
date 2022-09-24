@@ -1,4 +1,5 @@
 import './menus.css'
+import './menus_responsive.css'
 import cat_main from '../../../images/menus/main.jpg'
 import cat_combo from '../../../images/menus/combo.jpg'
 import cat_others from '../../../images/menus/others.jpg'

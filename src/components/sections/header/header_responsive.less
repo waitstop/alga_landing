@@ -1,0 +1,52 @@
+@import "../../../index.less";
+
+@media screen and (max-width: @tablet-breakpoint) {
+  header nav.nav__mobile{
+    display: flex;
+    button{
+      cursor: pointer;
+      background: transparent;
+      border: none;
+      img{
+        width: 32px;
+      }
+    }
+
+    .content{
+      z-index: 10;
+      transition: 0.1s all linear;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      align-content: center;
+      background: var(--light-bg);
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100vh;
+      ul{
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        flex-wrap: nowrap;
+      }
+      ul li *{
+        text-align: center;
+        color: black;
+        padding: 0;
+        border: 0;
+      }
+    }
+  }
+  header nav.nav__desktop{
+    display: none;
+  }
+}
+
+@media screen and (max-width: @mobile-breakpoint) {
+  header nav > a > img{
+    width: 160px;
+  }
+}

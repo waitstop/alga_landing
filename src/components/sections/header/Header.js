@@ -1,7 +1,109 @@
 import './header.css'
+import './header_responsive.css'
 import logo from '../../../images/icons/logo_white.svg'
+import burger_icon from '../../../images/icons/burger.svg'
+import close_icon from '../../../images/icons/close.svg'
 import {Link, animateScroll as scroll} from 'react-scroll'
 import Container from "../../container/Container";
+import {useState} from "react";
+
+const NavDesktop = () => {
+    return(
+        <nav className={'nav__desktop'}>
+            {/*eslint-disable-next-line*/}
+            <a onClick={()=>scroll.scrollToTop()}>
+                <img src={logo} alt="logo"/>
+            </a>
+            <ul>
+                <li>
+                    {/*eslint-disable-next-line*/}
+                    <a onClick={()=>scroll.scrollToTop()}>ГЛАВНАЯ</a>
+                </li>
+                <li>
+                    <Link smooth={true} to='gallery'>ФОТО</Link>
+                </li>
+                <li>
+                    <Link smooth={true} to='about'>О НАС</Link>
+                </li>
+                <li>
+                    <Link className={'button-link'} smooth={true} to='menus'>МЕНЮ</Link>
+                </li>
+            </ul>
+        </nav>
+    )
+}
+
+const NavMobile = () => {
+    const [state, setState]= useState(false)
+
+    return(
+        <nav className={'nav__mobile'}>
+            {/*eslint-disable-next-line*/}
+            <a onClick={()=>scroll.scrollToTop()}>
+                <img src={logo} alt="logo"/>
+            </a>
+
+            <button onClick={()=>{setState(true)}}>
+                <img src={burger_icon} alt="menu"/>
+            </button>
+
+            <div
+                style={{
+                    opacity: state ? 1:0,
+                    zIndex: state ? 10:-10
+                }}
+                className="content"
+            >
+                <ul>
+                    <li>
+                        {/*eslint-disable-next-line*/}
+                        <a onClick={()=> {
+                            setState(false)
+                            scroll.scrollToTop()
+                        }}>ГЛАВНАЯ</a>
+                    </li>
+                    <li>
+                        <Link
+                            smooth={true} to='gallery'
+                            onClick={()=>{
+                                setState(false)
+                            }}
+                        >
+                            ФОТО
+                        </Link>
+                    </li>
+                    <li>
+                        <Link
+                            smooth={true}
+                            to='about'
+                            onClick={()=>{
+                                setState(false)
+                            }}
+                        >
+                            О НАС
+                        </Link>
+                    </li>
+                    <li>
+                        <Link
+                            smooth={true}
+                            to='menus'
+                            onClick={()=>{
+                                setState(false)
+                            }}
+                        >
+                            МЕНЮ
+                        </Link>
+                    </li>
+                    <li>
+                        <button onClick={()=>{setState(false)}}>
+                            <img src={close_icon} alt="close"/>
+                        </button>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    )
+}
 
 const Header = ({bannerHeight}) => {
     return(
@@ -11,27 +113,8 @@ const Header = ({bannerHeight}) => {
             }}
         >
             <Container>
-                <nav>
-                    {/*eslint-disable-next-line*/}
-                    <a onClick={()=>scroll.scrollToTop()}>
-                        <img src={logo} alt="logo"/>
-                    </a>
-                    <ul>
-                        <li>
-                            {/*eslint-disable-next-line*/}
-                            <a onClick={()=>scroll.scrollToTop()}>ГЛАВНАЯ</a>
-                        </li>
-                        <li>
-                            <Link smooth={true} to='gallery'>ФОТО</Link>
-                        </li>
-                        <li>
-                            <Link smooth={true} to='about'>О НАС</Link>
-                        </li>
-                        <li>
-                            <Link className={'button-link'} smooth={true} to='menus'>МЕНЮ</Link>
-                        </li>
-                    </ul>
-                </nav>
+                <NavDesktop/>
+                <NavMobile/>
             </Container>
             
             <Link smooth={true} to='gallery' className={'arrow-down'}>

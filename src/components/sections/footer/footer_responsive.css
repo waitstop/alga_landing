@@ -36,4 +36,25 @@ ul {
   background-color: var(--primary);
   border-color: var(--primary);
 }
-/*# sourceMappingURL=index.css.map */
+@media screen and (max-width: 780px) {
+  footer > div {
+    flex-wrap: wrap;
+  }
+  footer > div > div {
+    order: 4;
+  }
+  footer ul {
+    font-size: 14px;
+    flex-basis: calc(100% / 3 - 10%);
+    padding: 0;
+  }
+  footer ul:nth-child(2) {
+    flex-basis: auto;
+  }
+}
+@media screen and (max-width: 450px) {
+  footer ul {
+    flex-basis: calc(100% / 2 - 10%);
+  }
+}
+/*# sourceMappingURL=footer_responsive.css.map */

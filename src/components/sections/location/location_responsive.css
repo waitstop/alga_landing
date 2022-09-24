@@ -36,4 +36,22 @@ ul {
   background-color: var(--primary);
   border-color: var(--primary);
 }
-/*# sourceMappingURL=index.css.map */
+@media screen and (max-width: 780px) {
+  .about {
+    flex-direction: column-reverse;
+  }
+  .about__map {
+    height: 500px;
+    width: 100%;
+  }
+}
+@media screen and (max-width: 450px) {
+  .about {
+    flex-direction: column-reverse;
+  }
+  .about__map {
+    height: 350px;
+    width: 100%;
+  }
+}
+/*# sourceMappingURL=location_responsive.css.map */

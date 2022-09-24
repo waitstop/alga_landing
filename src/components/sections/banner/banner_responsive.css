@@ -36,4 +36,31 @@ ul {
   background-color: var(--primary);
   border-color: var(--primary);
 }
-/*# sourceMappingURL=index.css.map */
+@media screen and (max-width: 780px) {
+  .banner {
+    padding: 12px 1rem;
+  }
+  .banner__left {
+    gap: 25px;
+  }
+  .banner__left > a {
+    font-size: 14px;
+  }
+  .banner__left > a img {
+    height: 24px;
+  }
+}
+@media screen and (max-width: 580px) {
+  .banner__right {
+    display: none;
+  }
+}
+@media screen and (max-width: 450px) {
+  .banner__left > a {
+    font-size: 12px;
+  }
+  .banner__left > a img {
+    height: 20px;
+  }
+}
+/*# sourceMappingURL=banner_responsive.css.map */

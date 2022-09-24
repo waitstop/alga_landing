@@ -1,4 +1,5 @@
 import './banner.css'
+import './banner_responsive.css'
 import phone_icon from '../../../images/icons/phone.svg'
 import pin_icon from '../../../images/icons/pin.svg'
 import yandex_eda_icon from '../../../images/icons/yandex_eda.svg'
