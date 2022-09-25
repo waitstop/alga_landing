@@ -43,7 +43,7 @@ const Location = () => {
                 <div>
                     <h3>Заказать онлайн</h3>
                     <a
-                        href="https://www.delivery-club.ru/srv/alga_moskva_vd?vendorBlockedPopupOpened=1"
+                        href="https://www.delivery-club.ru/srv/alga_moskva_vd"
                         target={'_blank'}
                         rel={'noreferrer'}
                     >

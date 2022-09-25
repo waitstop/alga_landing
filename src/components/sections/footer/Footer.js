@@ -47,7 +47,7 @@ const Footer = () => {
                         <a href="https://www.instagram.com/cafe_alga/">Instagram</a>
                     </li>
                     <li>
-                        <a href="https://www.delivery-club.ru/srv/alga_moskva_vd?outOfCoveragePopupOpened=1">Delivery club</a>
+                        <a href="https://www.delivery-club.ru/srv/alga_moskva_vd">Delivery club</a>
                     </li>
                     <li>
                         <a href="https://eda.yandex.ru/moscow/r/alga_vkus_kavkaza">Яндекс.Еда</a>
