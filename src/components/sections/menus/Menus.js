@@ -3,6 +3,7 @@ import './menus_responsive.css'
 import cat_main from '../../../images/menus/main.jpg'
 import cat_combo from '../../../images/menus/combo.jpg'
 import cat_others from '../../../images/menus/others.jpg'
+import cat_sushipizza from '../../../images/menus/sushi_pizza.jpg'
 
 import Container from "../../container/Container";
 
@@ -26,6 +27,10 @@ const Menus = () => {
                     <a href="./pdf/others.pdf" target={'_blank'} rel={'noreferrer'} className="cats-item">
                         <div className={'cats-img'} style={{backgroundImage: `url(${cat_others})`}}/>
                         <h4>Напитки, соусы и закуски</h4>
+                    </a>
+                    <a href="./pdf/sushi_pizza.pdf" target={'_blank'} rel={'noreferrer'} className="cats-item">
+                        <div className={'cats-img'} style={{backgroundImage: `url(${cat_sushipizza})`}}/>
+                        <h4>ALGA Sushi & Pizza</h4>
                     </a>
                 </div>
             </Container>
