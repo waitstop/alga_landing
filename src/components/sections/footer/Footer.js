@@ -47,10 +47,10 @@ const Footer = () => {
                         <a href="https://www.instagram.com/cafe_alga/">Instagram</a>
                     </li>
                     <li>
-                        <a href="https://www.delivery-club.ru/srv/alga_moskva_vd">Delivery club</a>
+                        <a href="https://market-delivery.yandex.ru/r/alga_vkus_kavkaza?placeSlug=alga_56&shippingType=delivery">Delivery club</a>
                     </li>
                     <li>
-                        <a href="https://eda.yandex.ru/moscow/r/alga_vkus_kavkaza">Яндекс.Еда</a>
+                        <a href="https://eda.yandex.ru/r/alga_vkus_kavkaza?placeSlug=alga_56&shippingType=delivery">Яндекс.Еда</a>
                     </li>
                 </ul>
 

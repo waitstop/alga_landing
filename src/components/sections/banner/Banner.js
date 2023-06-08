@@ -33,10 +33,10 @@ const Banner = ({passData}) => {
                 <a href="https://www.instagram.com/cafe_alga/" target="_blank" rel="noreferrer">
                     <img src={instagram} alt="instagram" />
                 </a>
-                <a href="https://eda.yandex.ru/moscow/r/alga_vkus_kavkaza" target="_blank" rel="noreferrer">
+                <a href="https://eda.yandex.ru/r/alga_vkus_kavkaza?placeSlug=alga_56&shippingType=delivery" target="_blank" rel="noreferrer">
                     <img src={yandex_eda_icon} alt="yandex_eda"/>
                 </a>
-                <a href="https://www.delivery-club.ru/srv/alga_moskva_vd" target="_blank" rel="noreferrer">
+                <a href="https://market-delivery.yandex.ru/r/alga_vkus_kavkaza?placeSlug=alga_56&shippingType=delivery" target="_blank" rel="noreferrer">
                     <img src={delivery_club_icon} alt="delivery_club"/>
                 </a>
             </div>

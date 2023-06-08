@@ -43,14 +43,14 @@ const Location = () => {
                 <div>
                     <h3>Заказать онлайн</h3>
                     <a
-                        href="https://www.delivery-club.ru/srv/alga_moskva_vd"
+                        href="https://market-delivery.yandex.ru/r/alga_vkus_kavkaza?placeSlug=alga_56&shippingType=delivery"
                         target={'_blank'}
                         rel={'noreferrer'}
                     >
                         <p>Delivery club</p>
                     </a>
                     <a
-                        href="https://eda.yandex.ru/moscow/r/alga_vkus_kavkaza?shippingType=delivery"
+                        href="https://eda.yandex.ru/r/alga_vkus_kavkaza?placeSlug=alga_56&shippingType=delivery"
                         target={'_blank'}
                         rel={'noreferrer'}
                     >
