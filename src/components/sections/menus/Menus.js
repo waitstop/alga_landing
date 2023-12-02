@@ -28,10 +28,6 @@ const Menus = () => {
                         <div className={'cats-img'} style={{backgroundImage: `url(${cat_others})`}}/>
                         <h4>Напитки, соусы и закуски</h4>
                     </a>
-                    <a href="./pdf/sushi_pizza.pdf" target={'_blank'} rel={'noreferrer'} className="cats-item">
-                        <div className={'cats-img'} style={{backgroundImage: `url(${cat_sushipizza})`}}/>
-                        <h4>ALGA Sushi & Pizza</h4>
-                    </a>
                 </div>
             </Container>
         </section>
